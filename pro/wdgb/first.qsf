@@ -1,0 +1,92 @@
+# Copyright (C) 1991-2006 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		first_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8T144C8
+set_global_assignment -name TOP_LEVEL_ENTITY first
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 6.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:30:41  MAY 12, 2012"
+set_global_assignment -name LAST_QUARTUS_VERSION "6.0 SP1"
+set_global_assignment -name DEVICE_FILTER_PACKAGE "ANY QFP"
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name BDF_FILE binaryToBCD.bdf
+set_global_assignment -name BDF_FILE same5.bdf
+set_global_assignment -name BDF_FILE same6.bdf
+set_global_assignment -name BDF_FILE first.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE first.vwf
+set_location_assignment PIN_119 -to /LD
+set_location_assignment PIN_120 -to CLK
+set_location_assignment PIN_115 -to h1
+set_location_assignment PIN_118 -to h2
+set_location_assignment PIN_113 -to h3
+set_location_assignment PIN_114 -to h4
+set_location_assignment PIN_104 -to h5
+set_location_assignment PIN_97 -to m1
+set_location_assignment PIN_96 -to m2
+set_location_assignment PIN_94 -to m3
+set_location_assignment PIN_93 -to m4
+set_location_assignment PIN_92 -to m5
+set_location_assignment PIN_86 -to m6
+set_location_assignment PIN_87 -to min1
+set_location_assignment PIN_121 -to min2
+set_location_assignment PIN_79 -to min3
+set_location_assignment PIN_112 -to hour1
+set_location_assignment PIN_101 -to hour2
+set_location_assignment PIN_103 -to hour3
+set_location_assignment PIN_99 -to hour4
+set_location_assignment PIN_100 -to hour5
+set_location_assignment PIN_53 -to min4
+set_location_assignment PIN_51 -to min5
+set_location_assignment PIN_18 -to min6
+set_location_assignment PIN_122 -to SetAlarm
+set_location_assignment PIN_52 -to Stop
+set_location_assignment PIN_126 -to ho11
+set_location_assignment PIN_129 -to ho12
+set_location_assignment PIN_132 -to ho13
+set_location_assignment PIN_133 -to ho14
+set_location_assignment PIN_134 -to ho21
+set_location_assignment PIN_135 -to ho22
+set_location_assignment PIN_136 -to ho23
+set_location_assignment PIN_137 -to mi11
+set_location_assignment PIN_139 -to mi12
+set_location_assignment PIN_141 -to mi13
+set_location_assignment PIN_142 -to mi14
+set_location_assignment PIN_143 -to mi21
+set_location_assignment PIN_144 -to mi22
+set_location_assignment PIN_3 -to mi23
+set_location_assignment PIN_4 -to se11
+set_location_assignment PIN_7 -to se12
+set_location_assignment PIN_8 -to se13
+set_location_assignment PIN_24 -to se14
+set_location_assignment PIN_42 -to se21
+set_location_assignment PIN_25 -to se22
+set_location_assignment PIN_28 -to se23
+set_location_assignment PIN_44 -to lig1
+set_location_assignment PIN_31 -to lig2
+set_location_assignment PIN_30 -to lig3
+set_location_assignment PIN_40 -to lig4
+set_location_assignment PIN_32 -to lig5
+set_location_assignment PIN_43 -to lig8

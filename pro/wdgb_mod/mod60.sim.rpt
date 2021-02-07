@@ -1,0 +1,203 @@
+Simulator report for mod60
+Wed May 16 16:08:23 2012
+Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2006 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 ms       ;
+; Simulation Netlist Size     ; 38 nodes     ;
+; Simulation Coverage         ;      78.95 % ;
+; Total Number of Transitions ; 845876       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C8T144C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Glitch Filtering                                                                           ; Off        ; Off           ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      78.95 % ;
+; Total nodes checked                                 ; 38           ;
+; Total output ports checked                          ; 38           ;
+; Total output ports with complete 1/0-value coverage ; 30           ;
+; Total output ports with no 1/0-value coverage       ; 8            ;
+; Total output ports with no 1-value coverage         ; 8            ;
+; Total output ports with no 0-value coverage         ; 8            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                      ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |mod60|74163:inst|f74163:sub|34       ; |mod60|74163:inst|f74163:sub|34       ; regout           ;
+; |mod60|74163:inst|f74163:sub|111      ; |mod60|74163:inst|f74163:sub|111      ; regout           ;
+; |mod60|74163:inst|f74163:sub|122      ; |mod60|74163:inst|f74163:sub|122      ; regout           ;
+; |mod60|74163:inst|f74163:sub|134      ; |mod60|74163:inst|f74163:sub|134      ; regout           ;
+; |mod60|74163:inst1|f74163:sub|34      ; |mod60|74163:inst1|f74163:sub|34      ; regout           ;
+; |mod60|74163:inst1|f74163:sub|111     ; |mod60|74163:inst1|f74163:sub|111     ; regout           ;
+; |mod60|inst3~19                       ; |mod60|inst3~19                       ; combout          ;
+; |mod60|74163:inst|f74163:sub|72       ; |mod60|74163:inst|f74163:sub|72       ; combout          ;
+; |mod60|74163:inst|f74163:sub|68~155   ; |mod60|74163:inst|f74163:sub|68~155   ; combout          ;
+; |mod60|74163:inst|f74163:sub|109      ; |mod60|74163:inst|f74163:sub|109      ; combout          ;
+; |mod60|74163:inst|f74163:sub|115~183  ; |mod60|74163:inst|f74163:sub|115~183  ; combout          ;
+; |mod60|74163:inst|f74163:sub|120      ; |mod60|74163:inst|f74163:sub|120      ; combout          ;
+; |mod60|74163:inst|f74163:sub|126~168  ; |mod60|74163:inst|f74163:sub|126~168  ; combout          ;
+; |mod60|74163:inst1|f74163:sub|105~10  ; |mod60|74163:inst1|f74163:sub|105~10  ; combout          ;
+; |mod60|74163:inst|f74163:sub|131      ; |mod60|74163:inst|f74163:sub|131      ; combout          ;
+; |mod60|74163:inst|f74163:sub|137~192  ; |mod60|74163:inst|f74163:sub|137~192  ; combout          ;
+; |mod60|inst3~20                       ; |mod60|inst3~20                       ; combout          ;
+; |mod60|74163:inst1|f74163:sub|68~231  ; |mod60|74163:inst1|f74163:sub|68~231  ; combout          ;
+; |mod60|74163:inst1|f74163:sub|109     ; |mod60|74163:inst1|f74163:sub|109     ; combout          ;
+; |mod60|74163:inst1|f74163:sub|115~207 ; |mod60|74163:inst1|f74163:sub|115~207 ; combout          ;
+; |mod60|74163:inst1|f74163:sub|72      ; |mod60|74163:inst1|f74163:sub|72      ; combout          ;
+; |mod60|CLK                            ; |mod60|CLK                            ; combout          ;
+; |mod60|Qa                             ; |mod60|Qa                             ; padio            ;
+; |mod60|Qb                             ; |mod60|Qb                             ; padio            ;
+; |mod60|Qc                             ; |mod60|Qc                             ; padio            ;
+; |mod60|Qd                             ; |mod60|Qd                             ; padio            ;
+; |mod60|Qe                             ; |mod60|Qe                             ; padio            ;
+; |mod60|Qf                             ; |mod60|Qf                             ; padio            ;
+; |mod60|RCO                            ; |mod60|RCO                            ; padio            ;
+; |mod60|CLK~clkctrl                    ; |mod60|CLK~clkctrl                    ; outclk           ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------+
+; Missing 1-Value Coverage                         ;
++------------+------------------+------------------+
+; Node Name  ; Output Port Name ; Output Port Type ;
++------------+------------------+------------------+
+; |mod60|Go  ; |mod60|Go        ; combout          ;
+; |mod60|A   ; |mod60|A         ; combout          ;
+; |mod60|/LD ; |mod60|/LD       ; combout          ;
+; |mod60|B   ; |mod60|B         ; combout          ;
+; |mod60|C   ; |mod60|C         ; combout          ;
+; |mod60|D   ; |mod60|D         ; combout          ;
+; |mod60|E   ; |mod60|E         ; combout          ;
+; |mod60|F   ; |mod60|F         ; combout          ;
++------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------+
+; Missing 0-Value Coverage                         ;
++------------+------------------+------------------+
+; Node Name  ; Output Port Name ; Output Port Type ;
++------------+------------------+------------------+
+; |mod60|Go  ; |mod60|Go        ; combout          ;
+; |mod60|A   ; |mod60|A         ; combout          ;
+; |mod60|/LD ; |mod60|/LD       ; combout          ;
+; |mod60|B   ; |mod60|B         ; combout          ;
+; |mod60|C   ; |mod60|C         ; combout          ;
+; |mod60|D   ; |mod60|D         ; combout          ;
+; |mod60|E   ; |mod60|E         ; combout          ;
+; |mod60|F   ; |mod60|F         ; combout          ;
++------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 6.0 Build 202 06/20/2006 Service Pack 1 SJ Full Version
+    Info: Processing started: Wed May 16 16:08:07 2012
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off mod60 -c mod60
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      78.95 %
+Info: Number of transitions in simulation is 845876
+Info: Vector file mod60.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Processing ended: Wed May 16 16:08:16 2012
+    Info: Elapsed time: 00:00:12
+
+

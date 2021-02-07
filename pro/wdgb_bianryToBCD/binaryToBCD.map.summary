@@ -1,0 +1,12 @@
+Analysis & Synthesis Status : Successful - Sun May 13 09:56:42 2012
+Quartus II Version : 6.0 Build 202 06/20/2006 SP 1 SJ Full Version
+Revision Name : binaryToBCD
+Top-level Entity Name : binaryToBCD
+Family : Cyclone II
+Total logic elements : 20
+Total registers : 0
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
